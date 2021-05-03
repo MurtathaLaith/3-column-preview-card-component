@@ -1,0 +1,55 @@
+*{
+    transition-duration: 0.5s;
+}
+
+.st-card{
+    background: #E28625;
+}
+.nd-card{
+    background: #006971;
+}
+.rd-card{
+    background: #004140;
+}
+.card-btn{
+    position: relative;
+    border: none;
+    background: none;
+    outline: none;
+    color: black;
+    mix-blend-mode: screen;
+    font-family: Lexend Deca;
+    font-size: 15px;
+   
+}
+.card-btn::after{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: white;
+    content: '';
+    mix-blend-mode: color-burn;
+    border-radius: 30px;
+}
+.card-btn:hover::after {
+    background: transparent;
+    border: 2px solid #fff;
+}
+
+.card-btn:hover{
+    color: white;
+}
+    
+.card-title{
+    font-family:"Big Shoulders Display";
+    font-weight: bold;
+    color: #fff;
+}
+.card-body{
+    font-family: "Lexend Deca";
+    color: #fff;
+    font-weight: 00;
+}
+
